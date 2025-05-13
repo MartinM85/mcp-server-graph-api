@@ -10,7 +10,7 @@
     <PackageReference Include="Azure.Identity" Version="1.13.2" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.4" />
     <PackageReference Include="Microsoft.Graph.Core" Version="3.2.4" />
-    <PackageReference Include="ModelContextProtocol" Version="0.1.0-preview.7" />
+    <PackageReference Include="ModelContextProtocol" Version="0.1.0-preview.13" />
   </ItemGroup>
 
 </Project>
