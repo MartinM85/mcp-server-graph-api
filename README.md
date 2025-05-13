@@ -63,4 +63,25 @@ If Claude Desktop app was already open, you need to close (quit it in system tra
 
 In case of any issues, you can check logs in **\%APPDATA%\Claude\\logs**.
 
+## MCP Client
+
+The MCP client allows you to connect the MCP server.
+
+Tools exposed by the MCP server can be invoked either by Claude AI (via Anthropic Claude API) or by any model deployed to Azure OpenAI Service.
+
+You need to set the Anthropic API key in the `AnthropicService.GetAnthropicApiKey()` method.
+
+```
+private static string GetAnthropicApiKey()
+{
+    return "<anthropic-api-key>";
+}
+```
+
+For Azure OpenAI Service, you need to 
+- **API key**: set either the `AZURE_OPENAI_API_KEY` environment variable or specify the key in the `AzureOpenAIServiceGetOpenAIApiKey()` method
+- **Azure OpenAI endpoint**: set either the `AZURE_OPENAI_ENDPOINT` environment variable or specify the endpoint in the `AzureOpenAIService.GetOpenAIEndpoint()` method
+
+
+
 
