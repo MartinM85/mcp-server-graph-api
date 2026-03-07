@@ -29,7 +29,7 @@ namespace McpClient
 
             // Initialize the AzureOpenAIClient
             var azureClient = new AzureOpenAIClient(new Uri(endpoint), credential);
-            _client = azureClient.GetOpenAIResponseClient("<deployment_name>")
+            _client = azureClient.GetChatClient("<deployment_name>")
                 .AsIChatClient()
                 .AsBuilder()
                 .UseFunctionInvocation()

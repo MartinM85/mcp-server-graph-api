@@ -7,13 +7,14 @@
   </PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Anthropic.SDK" Version="5.2.2" />
-		<PackageReference Include="Azure.AI.OpenAI" Version="2.2.0-beta.4" />
-		<PackageReference Include="Azure.Identity" Version="1.13.2" />
-		<PackageReference Include="Microsoft.Extensions.AI" Version="9.4.4-preview.1.25259.16" />
-		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.4" />
-		<PackageReference Include="ModelContextProtocol" Version="0.1.0-preview.13" />
-		<PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.4.4-preview.1.25259.16" />
+		<PackageReference Include="Anthropic.SDK" Version="5.10.0" />
+		<PackageReference Include="Azure.AI.OpenAI" Version="2.8.0-beta.1" />
+		<PackageReference Include="Azure.Identity" Version="1.18.0" />
+		<PackageReference Include="Microsoft.Extensions.AI" Version="10.3.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.3" />
+		<PackageReference Include="ModelContextProtocol" Version="1.1.0" />
+		<PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.3.0" />
+		<PackageReference Include="OpenAI" Version="2.8.0" />
 	</ItemGroup>
 
 </Project>
