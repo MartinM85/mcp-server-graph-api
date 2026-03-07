@@ -1,6 +1,5 @@
 ﻿using ModelContextProtocol.Client;
-using ModelContextProtocol.Protocol.Transport;
-using ModelContextProtocol.Protocol.Types;
+using ModelContextProtocol.Protocol;
 
 namespace McpClient
 {
@@ -25,7 +24,7 @@ namespace McpClient
             });
 
             // create MCP client
-            await using var mcpClient = await McpClientFactory.CreateAsync(clientTransport, new()
+            await using var mcpClient = await ModelContextProtocol.Client.McpClient.CreateAsync(clientTransport, new()
             {
                 ClientInfo = new Implementation
                 {
